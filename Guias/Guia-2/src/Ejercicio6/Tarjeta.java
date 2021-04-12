@@ -7,6 +7,10 @@ public class Tarjeta {
         
     }
 
+    public int retirar(int valor) {
+        return valor;
+    }
+
     public Tarjeta(Usuario usr) {
         user = usr;
     }
