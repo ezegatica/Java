@@ -22,8 +22,8 @@ package Ejercicio8;
 
 public class Main {
     public static void main(String[] args) {
-        // Televisor tv = new Televisor(100, 'G', "J45", "philips", 20, false, 5);
-        Televisor tv = new Televisor();
+        Televisor tv = new Televisor(100, 'D', "J45", "philips", 20, true, 5);
+        // Televisor tv = new Televisor(3);
         // Lavadora lvdr = new Lavadora(100, 'A', "J45", "philips", 20, "rojo", 5);
         Lavadora lvdr = new Lavadora();
         System.out.println("TV: " + tv.get() + tv.getTV());

@@ -22,7 +22,7 @@ public class Electrodomestico {
         this.peso = peso;
     }
     public char comprobarConsumoEnergetico(char letra){
-        if (letra == 'A' || letra == 'B' || letra == 'C' || letra == 'D' || letra == 'E' || letra == 'F'){
+        if ("ABCDEFabcdef".indexOf(letra) != -1){
             return letra;
         }else{
             return 'F';
