@@ -14,5 +14,8 @@ public class Cuenta {
     public double getCant(){
         return cantidad;
     }
+    public Persona getPersona(){
+        return titular;
+    }
 }
 

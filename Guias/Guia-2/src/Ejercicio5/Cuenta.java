@@ -17,5 +17,8 @@ public class Cuenta {
     public double getCant(){
         return cantidad;
     }
+    public Persona getTitular(){
+        return titular;
+    }
 }
 

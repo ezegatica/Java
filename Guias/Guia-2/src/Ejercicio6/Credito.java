@@ -13,4 +13,7 @@ public class Credito extends Tarjeta{
     public Credito(int d){
         dni = d;
     }
+    public int getDni(){
+        return dni;
+    }
 }

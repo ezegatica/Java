@@ -29,4 +29,7 @@ public class Debito extends Tarjeta{
     public int getCantidad() {
         return cantidad;
     }
+    public int getDni() {
+        return dni;
+    }
 }

@@ -15,6 +15,10 @@ public class Tarjeta {
         user = usr;
     }
 
+    public Usuario getUser() {
+        return user;
+    }
+
     // public int retirar(){
     //     System.out.println("hola")
     // }

@@ -25,4 +25,10 @@ public class CuentaVIP extends Cuenta {
     public int getDescuento(){
         return descuento;
     }
+    public Persona getTitular(){
+        return titular;
+    }
+    public double getCant(){
+        return cantidad;
+    }
 }

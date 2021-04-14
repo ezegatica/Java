@@ -7,4 +7,10 @@ public class Persona {
         this.nombre = n;
         this.apellido = a;
     }
+    public String getNombre(){
+        return nombre;
+    }
+    public String getApellido(){
+        return apellido;
+    }
 }
