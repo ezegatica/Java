@@ -1,7 +1,7 @@
 package Ejercicio6;
 
 public class Tarjeta {
-    private Usuario user; 
+    private int dni; 
 
     public Tarjeta(){
         
@@ -11,12 +11,12 @@ public class Tarjeta {
         return valor;
     }
 
-    public Tarjeta(Usuario usr) {
-        user = usr;
+    public Tarjeta(int d) {
+        dni = d;
     }
 
-    public Usuario getUser() {
-        return user;
+    public int getUser() {
+        return this.dni;
     }
 
     // public int retirar(){

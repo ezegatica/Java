@@ -11,7 +11,7 @@ public class Main {
         String s1, s2;
         s1 = new String("hola");
         // a)
-        // s1 = s2
+        // s2 = s1;
         s2 = new String("hola");
         if (s1 == s2) {
         // b)
