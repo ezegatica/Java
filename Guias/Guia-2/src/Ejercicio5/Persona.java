@@ -14,6 +14,6 @@ public class Persona {
         return apellido;
     }
     public Persona Clone(){
-        return this;
+        return new Persona(nombre, apellido);
     }
 }
