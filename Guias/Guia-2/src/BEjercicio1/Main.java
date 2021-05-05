@@ -3,7 +3,7 @@ package BEjercicio1;
 // ¿Qué salida se obtiene? ¿Por qué?
     // Se obtiene un Distinto, porque son 2 instancias completamente diferentes, aunque el contenido sea el mismo, 
     // estan alocadas en diferentes ubicaciones. 
-// a) Cambiando únicamente la generación de s1 y s2
+// a) Cambiando únicamente la generación de s1 y s2.
 // b) Cambiando únicamente el método de comparación.
 
 public class Main {

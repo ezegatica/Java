@@ -1,6 +1,6 @@
 package Ejercicio8;
 
-public class Electrodomestico {
+public abstract class Electrodomestico {
     private int precio;
     private char consumo;
     private String modelo;
@@ -21,7 +21,7 @@ public class Electrodomestico {
         this.marca = marca;
         this.peso = peso;
     }
-    public char comprobarConsumoEnergetico(char letra){
+    private char comprobarConsumoEnergetico(char letra){
         if ("ABCDEFabcdef".indexOf(letra) != -1){
             return letra;
         }else{
