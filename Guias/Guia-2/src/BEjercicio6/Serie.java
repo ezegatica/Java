@@ -11,4 +11,17 @@ public class Serie {
         this.temporadas = t;
         this.titulo = n;
     }
+    public String getTitle(){
+        return titulo;
+    }
+    public int getTemporadas(){
+        return temporadas;
+    }
+    // @Override
+    // public String toString(){
+    //     return "Serie{"+
+    //         "temporadas=" + this.temporadas +
+    //         ", titulo='" + this.titulo + "'"+ 
+    //         "}";
+    // }
 }

@@ -19,7 +19,7 @@ public class Main {
         Serie serie4 = new Serie(10, "friends");
         Serie[] series = { serie1, serie2, serie3, serie4 };
         Streamer netflix = new Streamer(series, "netflix");
-        System.out.println(netflix);
+        System.out.println(netflix.buscarPorTitulo("friends"));
         // Streamer{series=[Serie{sesons=6, title='BROCKLING 99'}, Serie{sesons=12,
         // title='Dr
         // house'}, Serie{sesons=5, title='outlander'}, Serie{sesons=10,

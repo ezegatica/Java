@@ -1,5 +1,6 @@
 package BEjercicio7;
-
+// Indicar y justificar el resultado que se obtiene al ejecutar el siguiente
+// programa:
 public class Main {
     public static void main(String[] args) {
         Integer[][] matriz = new Integer[2][2];
