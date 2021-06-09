@@ -8,4 +8,12 @@ public interface IntegerList {
     int contains(int element);
 
     boolean remove(int index);
+
+    default boolean removeElement(int element){
+        int index = contains(element);
+        if(index != -1){
+            return remove(index);
+        }
+        return false;
+    }
 }

@@ -1,5 +1,4 @@
 package Ej1;
-
 import java.util.Arrays;
 
 //Crear la clase ArrayIntegerList que implemetnte la interfaz anterior utilizando un array
@@ -10,13 +9,14 @@ import java.util.Arrays;
 //¿No me va afectar al signature lanzar esa excepcion?
 //usen System.ArrayCopy para hacer el remove
 
-public class ArrayIntegerList implements IntegerList {
+public class ArrayIntegerListCopy implements IntegerList {
     private Integer[] elements;
     private int dim;
-    private int maximo = 2;
+    private int maximo;
 
-    public ArrayIntegerList() {
+    public ArrayIntegerListCopy(int maximo) {
         elements = new Integer[maximo];
+        this.maximo = maximo;
     }
 
     @Override
@@ -26,14 +26,10 @@ public class ArrayIntegerList implements IntegerList {
 
     public void add(int element) {
         if (dim >= elements.length) {
-            resize();
+            throw new ArrayIndexOutOfBoundsException();
         }
         elements[dim++] = element;
 
-    }
-
-    private void resize() {
-        elements = Arrays.copyOf(elements, dim + maximo);
     }
 
     public int contains(int element) {
