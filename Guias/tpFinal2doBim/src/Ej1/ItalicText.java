@@ -1,3 +1,4 @@
+package Ej1;
 public class ItalicText extends Etiquetas{
     private String text;
     public ItalicText(PlainText text) {
@@ -9,5 +10,10 @@ public class ItalicText extends Etiquetas{
     @Override
     public String toString(){
         return super.source("i", text);
+    }
+    @Override
+    public String source() {
+        // TODO Auto-generated method stub
+        return null;
     }
 }

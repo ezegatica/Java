@@ -1,3 +1,4 @@
+package Ej1;
 public class PlainText {
     private String text;
 

@@ -1,3 +1,4 @@
+package Ej1;
 public class BoldText extends Etiquetas{
     private String text;
     public BoldText(PlainText text) {
@@ -9,5 +10,10 @@ public class BoldText extends Etiquetas{
     @Override
     public String toString(){
         return super.source("b", text.toString());
+    }
+    @Override
+    public String source() {
+        // TODO Auto-generated method stub
+        return null;
     }
 }
