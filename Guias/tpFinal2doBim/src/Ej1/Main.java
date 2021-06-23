@@ -25,7 +25,8 @@ public class Main {
         System.out.println(linkBoldText2);//<b><a  href:itba.edu.ar>ITBA</a></b> 
         text.setText("Ejemplo");
         System.out.println("CAMBIANDO A: " + text);
-        System.out.println(boldText);
+        System.out.println(boldText);//<b>Ejemplo</b>
+        System.out.println(boldItalicText);//<b><i>Ejemplo</i></b> 
         System.out.println(linkBoldText1);//<a  href:itba.edu.ar><b><i>Ejemplo</i></b></a> 
         System.out.println(linkBoldText2); //<b><a  href:itba.edu.ar>Ejemplo</a></b>
     }

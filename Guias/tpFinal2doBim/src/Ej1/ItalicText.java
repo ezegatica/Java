@@ -2,13 +2,15 @@ package Ej1;
 
 public class ItalicText implements HTMLText{
     private String text;
-
+    private boolean esHTML = false;
+    private HTMLText textHTML;
     public ItalicText(PlainText text) {
         this.text = text.toString();
         text.agregar(this);
     }
     public ItalicText(HTMLText text) {
-        this.text = text.toString();
+        this.textHTML = text;
+        this.esHTML = true;
     }
     @Override
     public void cambiarTexto(String txt){
@@ -20,6 +22,9 @@ public class ItalicText implements HTMLText{
     }
     @Override
     public String source() {
-        return String.format("<i>%s</i>", text.toString());
+        if (esHTML){
+            return String.format("<i>%s</i>", this.textHTML.toString());
+        }
+        return String.format("<i>%s</i>", this.text);
     }
 }
