@@ -1,19 +1,25 @@
 package Ej1;
-public class ItalicText extends Etiquetas{
+
+public class ItalicText implements HTMLText{
     private String text;
+
     public ItalicText(PlainText text) {
         this.text = text.toString();
+        text.agregar(this);
     }
     public ItalicText(HTMLText text) {
         this.text = text.toString();
     }
     @Override
+    public void cambiarTexto(String txt){
+        this.text = txt;
+    } 
+    @Override
     public String toString(){
-        return super.source("i", text);
+        return this.source();
     }
     @Override
     public String source() {
-        // TODO Auto-generated method stub
-        return null;
+        return String.format("<i>%s</i>", text.toString());
     }
 }

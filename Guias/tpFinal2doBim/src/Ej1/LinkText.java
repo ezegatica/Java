@@ -1,11 +1,12 @@
 package Ej1;
-public class LinkText extends Etiquetas {
+public class LinkText implements HTMLText {
     private String text;
     private String destino;
 
     public LinkText(PlainText text, String destino) {
         this.text = text.toString();
         this.destino = destino;
+        text.agregar(this);
     }
 
     public LinkText(HTMLText text, String destino) {
@@ -14,13 +15,17 @@ public class LinkText extends Etiquetas {
     }
     @Override
     public String toString() {
-        return super.source("a", text, destino);
+        return this.source();
     }
 
     @Override
     public String source() {
-        // TODO Auto-generated method stub
-        return null;
+        return String.format("<a href=%s>%s</a>", destino, text);
+    }
+
+    @Override
+    public void cambiarTexto(String txt){
+      this.text = txt;
     }
 
     
