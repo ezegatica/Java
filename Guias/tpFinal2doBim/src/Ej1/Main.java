@@ -11,23 +11,20 @@ public class Main {
         HTMLText boldItalicText = new BoldText(italicText);
         System.out.println(boldItalicText);//<b><i>Hola</i></b> 
         
-        text.setText("ITBA");
+        text.setText("ORT");
         System.out.println("CAMBIANDO A: " + text);
-        System.out.println(boldText);//<b>ITBA</b> 
-        System.out.println(italicText);//<i>ITBA</i> 
-        System.out.println(boldItalicText);//<b><i>ITBA</i></b> 
-        
-        HTMLText linkText = new LinkText(text, "itba.edu.ar");
-        HTMLText linkBoldText1 = new LinkText(boldItalicText, "itba.edu.ar");
+        System.out.println(boldText);//<b>ORT</b> 
+        System.out.println(italicText);//<i>ORT</i> 
+        System.out.println(boldItalicText);//<b><i>ORT</i></b> 
+        HTMLText linkText = new LinkText(text, "ort.edu.ar");
+        HTMLText linkBoldText1 = new LinkText(boldItalicText, "ort.edu.ar");
         HTMLText linkBoldText2 = new BoldText(linkText);
-        System.out.println(linkText);//<a  href:itba.edu.ar>ITBA</a> 
-        System.out.println(linkBoldText1);//<a  href:itba.edu.ar><b><i>ITBA</i></b></a> 
-        System.out.println(linkBoldText2);//<b><a  href:itba.edu.ar>ITBA</a></b> 
+        System.out.println(linkText);//<a  href:ORT.edu.ar>ORT</a> 
+        System.out.println(linkBoldText1);//<a  href:ORT.edu.ar><b><i>ORT</i></b></a> 
+        System.out.println(linkBoldText2);//<b><a  href:ORT.edu.ar>ORT</a></b> 
         text.setText("Ejemplo");
         System.out.println("CAMBIANDO A: " + text);
-        System.out.println(boldText);//<b>Ejemplo</b>
-        System.out.println(boldItalicText);//<b><i>Ejemplo</i></b> 
-        System.out.println(linkBoldText1);//<a  href:itba.edu.ar><b><i>Ejemplo</i></b></a> 
-        System.out.println(linkBoldText2); //<b><a  href:itba.edu.ar>Ejemplo</a></b>
+        System.out.println(linkBoldText1);//<a  href:ORT.edu.ar><b><i>Ejemplo</i></b></a> 
+        System.out.println(linkBoldText2); //<b><a  href:ORT.edu.ar>Ejemplo</a></b>
     }
 }

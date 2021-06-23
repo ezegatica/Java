@@ -15,15 +15,12 @@ public class LinkText implements HTMLText {
         this.esHTML = true;
         this.destino = destino;
     }
+    
     @Override
     public String toString() {
         return this.source();
     }
 
-    // @Override
-    // public String source() {
-    //     return String.format("<a href=%s>%s</a>", destino, text);
-    // }
     @Override
     public String source() {
         if (esHTML){

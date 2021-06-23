@@ -7,8 +7,10 @@ public class CentralAlarmSystem {
         setEmergencyServices(emergencyServices);
     }
 
-    public EmergencyServices[] getEmergencyServices() {
-        return emergencyServices;
+    public void getEmergencyServices() {
+        for (EmergencyServices servicio : emergencyServices){
+            System.out.println(servicio);
+        }
     }
 
     public void setEmergencyServices(EmergencyServices[] emergencyServices) {

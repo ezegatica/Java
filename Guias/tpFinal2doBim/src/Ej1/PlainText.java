@@ -11,6 +11,13 @@ public class PlainText {
         this.objetos = new HTMLText[10];
     }
 
+    public void agregar(HTMLText text){
+        if(dim == objetos.length){
+            objetos = Arrays.copyOf(objetos, objetos.length + 10);
+          }
+        objetos[dim++] = text;
+    }
+
     public void setText(String text) {
         this.text = text;
         for (HTMLText obj : objetos){
@@ -20,12 +27,7 @@ public class PlainText {
             }
         }
     }
-    public void agregar(HTMLText text){
-        if(dim == objetos.length){
-            objetos = Arrays.copyOf(objetos, objetos.length + 10);
-          }
-          objetos[dim++] = text;
-    }
+    
 
     @Override
     public String toString() {
