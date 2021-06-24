@@ -22,7 +22,8 @@ public class AlarmSystem {
     }
 
     public void activate(){
-        System.out.println("Activando alarma de sensores de Casa");
+        // System.out.println("Activando alarma de sensores de");
+        System.out.println(String.format("Activando alarma de sensores de %s", nombre));
         for (Sensor obj : sensores){
             if(obj != null){
                 obj.activate();
@@ -31,7 +32,7 @@ public class AlarmSystem {
     }
 
     public void deactivate(){
-        System.out.println("Desactivando alarma de sensores de Casa");
+        System.out.println(String.format("Desctivando alarma de sensores de %s", nombre));
         for (Sensor obj : sensores){
             if(obj != null){
                 obj.deactivate();

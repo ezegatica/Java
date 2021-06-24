@@ -1,13 +1,14 @@
 package Ej1;
+
 public class LinkText implements HTMLText {
-    private String text;
+    private PlainText text;
     private String destino;
     private boolean esHTML = false;
     private HTMLText textHTML;
+
     public LinkText(PlainText text, String destino) {
-        this.text = text.toString();
+        this.text = text;
         this.destino = destino;
-        text.agregar(this);
     }
 
     public LinkText(HTMLText text, String destino) {
@@ -24,15 +25,8 @@ public class LinkText implements HTMLText {
     @Override
     public String source() {
         if (esHTML){
-            return String.format("<a href=%s>%s</a>", destino, textHTML);
+            return String.format("<a href=%s>%s</a>", destino, textHTML.toString());
         }
-        return String.format("<a href=%s>%s</a>", destino,text);
+        return String.format("<a href=%s>%s</a>", destino,text.toString());
     }
-
-    @Override
-    public void cambiarTexto(String txt){
-      this.text = txt;
-    }
-
-    
 }
