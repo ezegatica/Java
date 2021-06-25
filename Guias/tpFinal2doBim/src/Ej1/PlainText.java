@@ -1,6 +1,6 @@
 package Ej1;
 
-public class PlainText {
+public class PlainText implements HTMLText{
     private String text;
 
     public PlainText(String text) {
@@ -10,9 +10,12 @@ public class PlainText {
     public void setText(String text) {
         this.text = text;
     }
-    
+    @Override
+    public String source(){
+        return this.text.toString();
+    }
     @Override
     public String toString() {
-        return this.text;
+        return this.source();
     }
 }
