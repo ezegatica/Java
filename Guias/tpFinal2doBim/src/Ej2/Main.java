@@ -33,7 +33,7 @@ public class Main {
         doorSensor.motionDetected(); // Sensor Puerta (ID: 0) detectó movimiento //Llamando a Ambulancia al 107
         System.out.println("##########");//##########
         Sensor balconySensor = alarmSystem.addAlarmSensor("Balcón");
-        balconySensor.motionDetected();// !!!!no se activa porque predeterminadamente estan apagados!!!!
+        balconySensor.motionDetected();
         System.out.println("##########");//##########
     }
 }

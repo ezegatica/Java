@@ -12,7 +12,7 @@ public class PlainText implements HTMLText{
     }
     @Override
     public String source(){
-        return this.text.toString();
+        return this.text;
     }
     @Override
     public String toString() {
