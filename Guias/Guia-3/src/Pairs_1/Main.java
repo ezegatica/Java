@@ -6,5 +6,6 @@ public class Main {
         System.out.println(stringDoublePair); // [hola, 0.1]
         Pair<Integer, Integer> integerIntegerPair = new Pair<>(1, 2);
         System.out.println(integerIntegerPair); // [1, 2]
+        System.out.println(stringDoublePair.equals(new Pair<>("hola", 0.1))); // true
     }
 }
