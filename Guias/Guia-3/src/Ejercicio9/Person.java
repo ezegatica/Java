@@ -9,6 +9,9 @@ public class Person implements Comparable<Person>{
         this.dni = dni;
         this.edad = edad;
     }
+    public String getName(){
+        return nombre; 
+    }
     @Override
     public int compareTo(Person p2){
         return Integer.compare(edad, p2.edad);
