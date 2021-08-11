@@ -1,6 +1,6 @@
 package Ejercicio8;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private String nombre;
     private int dni;
     private int edad;
@@ -8,5 +8,13 @@ public class Person {
         this.nombre = nombre;
         this.dni = dni;
         this.edad = edad;
+    }
+    @Override
+    public int compareTo(Person p2){
+        return Integer.compare(edad, p2.edad);
+    }
+    @Override
+    public String toString(){
+        return nombre;
     }
 }
