@@ -1,17 +1,13 @@
 package Ejercicio9;
 
 public class Person implements Comparable<Person> {
-    private String nombre;
-    private int DNI;
+    private String name;
+    private int dni;
     private int edad;
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public Person(String nombre, int DNI, int edad) {
-        this.nombre = nombre;
-        this.DNI = DNI;
+    Person(String name, int dni, int edad) {
+        this.name = name;
+        this.dni = dni;
         this.edad = edad;
     }
 
@@ -22,7 +18,9 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return nombre;
+        return name;
     }
-
+    public String getName(){
+        return name;
+    }
 }
