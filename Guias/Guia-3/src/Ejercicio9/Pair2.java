@@ -1,21 +1,30 @@
 package Ejercicio9;
 
-public class Pair2<P extends Comparable<P>> {
-    private P homero;
-    private P lisa;
-    private Comparator<T> comparator;
+public class Pair2<T extends Comparable<T>> {
+  private T value1;
+  private T value2;
+  private Comparator<T> fc;
 
-    public Pair2(P homero, P lisa, Comparator<P> comparator) {
-        this.homero = homero;
-        this.lisa = lisa;
-        this.comparator = comparator;
-    }
-    public P min() {
-        if (homero.compareTo(lisa) <= 0) {
-            return homero;
-        } else
-            return lisa;
-    }
-    
+  public Pair2(T value1, T value2, Comparator<T> fc) {
+    this.value1 = value1;
+    this.value2 = value2;
+    this.fc = fc;
+  }
 
+  public T min() {
+    if (value1.compareTo(value2) <= 0) {
+      return value1;
+    } else {
+      return value2;
+    }
+  }
+
+  public T max() {
+    if (fc.compare(value1, value2) >= 0) {
+      return value1;
+
+    } else {
+      return value2;
+    }
+  }
 }
