@@ -2,7 +2,7 @@ package Sets;
 import java.util.Collections;
 
 
-public class Citizen extends Collections{
+public class Citizen{
     private int dni;
     private String nombre;
     private String apellido;
@@ -11,5 +11,8 @@ public class Citizen extends Collections{
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
+    }
+    public String getDni() {
+        return String.valueOf(dni);
     }
 }
