@@ -1,7 +1,7 @@
-package Ej1;
-
 public class EmptyQueueException extends Exception {
-    public String getMessage(){
-        return "La cola esta vacia";
+    private static final String MESSAGE = "La cueue está vacia :(";
+  
+    public EmptyQueueException() {
+      super(MESSAGE);
     }
-}
+  }
