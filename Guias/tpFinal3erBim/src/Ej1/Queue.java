@@ -9,7 +9,7 @@ public interface Queue<P> extends Collection<P> {
   boolean add(P p); // tira excepcion si la cola esta llena
 
   // Consultar elementos
-  P pop(); // devuelve el primero y lo elimine de la cola
+  P pop() throws EmptyQueueException; // devuelve el primero y lo elimine de la cola
 
   P peek(); // revisar cual es el primero sin eliminarlo
 
