@@ -7,4 +7,10 @@ public class MedicalShifts {
         this.lugar = lugar;
         this.nombre = nombre;
     }
+    public int getLugar(){
+        return lugar;
+    }
+    public String getNombre(){
+        return nombre;
+    }
 }

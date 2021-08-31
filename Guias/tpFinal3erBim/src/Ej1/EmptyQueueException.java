@@ -1,3 +1,4 @@
+package Ej1;
 public class EmptyQueueException extends Exception {
     private static final String MESSAGE = "La cueue está vacia :(";
   
