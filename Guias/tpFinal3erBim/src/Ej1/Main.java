@@ -1,12 +1,13 @@
 package Ej1;
 // Consigna
+
 // https://campus.belgrano.ort.edu.ar/tic/tp/1657912/tp-tercer-bimestre
 // Pistas: T[] elements =  (T[]) new Comparable[INITIAL_DIM];
 // Creación  de  un  array  de  elementos  genéricos  comparables 
 // Pueden  usar  en  algún  momento Arrays.sort(elements,fromIndex,toIndex);
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EmptyQueueException {
         Queue<MedicalShifts> queueHospital = new QueueImplement<>();
         queueHospital.add(new MedicalShifts("harry", 0));
         queueHospital.add(new MedicalShifts("hermione", 3));
@@ -35,21 +36,21 @@ public class Main {
         System.out.println(queueHospital.min());
     }
 }
-// harry 
-// false 
-// harry 
-// hermione 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+// harry
+// false
+// harry
 // hermione
-// ron 
-// luna 
-// voldemort 
-// hagrid 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
-// ron 
-// hermione 
-// hagrid 
-// luna 
-// voldemort 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// hermione
+// ron
+// luna
+// voldemort
+// hagrid
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// ron
+// hermione
+// hagrid
+// luna
+// voldemort
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // hagrid
