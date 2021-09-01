@@ -1,7 +1,6 @@
 package Ej1;
 
 //que falta=
-// El pop, que se borre bien el array
 // El sort
 // que coño hay que pasar en el min()
 import java.util.Arrays;
@@ -36,12 +35,13 @@ public class QueueImplement<P> implements Queue<P> {
   public P pop() throws EmptyQueueException {
     sort();
     P first = elements[0];
-    // this.elements = Arrays.copyOfRange(elements, 1, cantidad - 1);
+    this.elements = Arrays.copyOfRange(elements, 1, elements.length); // si hay error, es - 1
+    cantidad--;
     return first;
   }
 
   @Override
-  public P min() {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar el primero
+  public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar el primero
     return elements[0];
   }
 
@@ -52,7 +52,7 @@ public class QueueImplement<P> implements Queue<P> {
 
   @Override
   public void sort() { // sortear por el indice (2do parametro)
-    // Arrays.sort(elements, 0, 10);
+    // Arrays.sort(elements, 0, cantidad - 1);
   }
 
   @Override
@@ -67,9 +67,6 @@ public class QueueImplement<P> implements Queue<P> {
 
       @Override
       public P next() {
-        if (!hasNext()) {
-          // throw new EmptyQueueException();
-        }
         return elements[index++];
       }
     };

@@ -33,9 +33,15 @@ public class Main {
             System.out.println(shifts);
         }
         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-        System.out.println(queueHospital.min()); //ACA ADENTOR VA ALGO!°!!""#!!!#!#"!|"
+        System.out.println(queueHospital.min(new Comparator<MedicalShifts>() {
+            @Override
+            public int compare(MedicalShifts o1, MedicalShifts o2) {
+                return o1.getNombre().compareTo(o2.getNombre());
+            }
+        })); // ACA ADENTOR VA ALGO!°!!""#!!!#!#"!|" posiblemente comaprador de n ombre
     }
 }
+
 // harry
 // false
 // harry
