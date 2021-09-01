@@ -1,11 +1,10 @@
 package Ej1;
+
 //que falta=
 // El pop, que se borre bien el array
 // El sort
 // que coño hay que pasar en el min()
 import java.util.Arrays;
-import java.util.Comparator;
-import java.lang.Iterable;
 import java.util.Iterator;
 
 public class QueueImplement<P> implements Queue<P> {
@@ -29,36 +28,31 @@ public class QueueImplement<P> implements Queue<P> {
 
   @Override
   public P peek() {
+    sort();
     return elements[0];
   }
 
   @Override
   public P pop() throws EmptyQueueException {
+    sort();
     P first = elements[0];
     // this.elements = Arrays.copyOfRange(elements, 1, cantidad - 1);
     return first;
   }
 
   @Override
-  public P min() {// devolver el mas pequeño en queue. Se puede sortear y dsp agarrar el ultimo
-    sort();
+  public P min() {// devolver el mas pequeño en queue. Se puede sortear y dsp agarrar el primero
     return elements[0];
   }
 
   @Override
   public P max() { // devuelve el mas grande en queue. Se puede sortear y dsp agarrar el ultimo
-    sort();
     return elements[cantidad - 1];
   }
 
   @Override
-  public void sort() { // sortear por el indice (2do parametro)
-    // Arrays.sort(elements, new Comparable<P>() {
-    // @Override
-    // public int compare(P o1, P o2) {
-    // return o1.getLugar().compareTo(o2.getLugar());
-    // }
-    // });
+  public void sort() { // sortear por el indice (2do parametro) es por ekl neomerebeeeee
+    // Arrays.sort(elements, 0, 10);
   }
 
   @Override

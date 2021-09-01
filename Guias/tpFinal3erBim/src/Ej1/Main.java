@@ -33,7 +33,7 @@ public class Main {
             System.out.println(shifts);
         }
         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-        System.out.println(queueHospital.min());
+        System.out.println(queueHospital.min()); //ACA ADENTOR VA ALGO!°!!""#!!!#!#"!|"
     }
 }
 // harry
