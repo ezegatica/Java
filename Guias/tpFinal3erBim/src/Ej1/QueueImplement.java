@@ -41,17 +41,17 @@ public class QueueImplement<P> implements Queue<P> {
   }
 
   @Override
-  public P min() {// devolver el mas pequeño en queue. Se puede sortear y dsp agarrar el primero
+  public P min() {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar el primero
     return elements[0];
   }
 
   @Override
-  public P max() { // devuelve el mas grande en queue. Se puede sortear y dsp agarrar el ultimo
+  public P max() { // devuelve el nombre mas grandajo. Se puede sortear y dsp agarrar el ultimo
     return elements[cantidad - 1];
   }
 
   @Override
-  public void sort() { // sortear por el indice (2do parametro) es por ekl neomerebeeeee
+  public void sort() { // sortear por el indice (2do parametro)
     // Arrays.sort(elements, 0, 10);
   }
 
