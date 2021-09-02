@@ -19,7 +19,8 @@ public class MedicalShifts implements Comparable<MedicalShifts> {
 
     @Override
     public String toString() {
-        return getNombre();
+        return getNombre() + " - " + getLugar();
+        // return getNombre();
     }
 
     @Override

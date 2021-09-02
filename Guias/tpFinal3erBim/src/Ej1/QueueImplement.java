@@ -6,7 +6,7 @@ package Ej1;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class QueueImplement<P> implements Queue<P> {
+public class QueueImplement<P extends Comparable<P>> implements Queue<P> {
   private P[] elements;
   private static int INITIAL_DIM = 10;
   private int cantidad = 0;
@@ -41,7 +41,12 @@ public class QueueImplement<P> implements Queue<P> {
   }
 
   @Override
-  public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar el primero
+  public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar
+                                                      // el primero
+    // P min = null;
+    // for (P shifts : elements) {
+    //   comparator.compare(elements[0], min);
+    // }
     return elements[0];
   }
 
@@ -51,8 +56,18 @@ public class QueueImplement<P> implements Queue<P> {
   }
 
   @Override
-  public void sort() { // sortear por el indice (2do parametro)
-    // Arrays.sort(elements, 0, cantidad - 1);
+  public void sort() {
+    P min = elements[0];
+    System.out.println("min: " + min);
+      for (int i = 0; i < cantidad; i++) {
+        if(elements[i].compareTo(min) == -1){
+          min = elements[i];
+        }
+        // System.out.println("REPSUESTA: "  + r);
+        // System.out.println("COSO: "  + o);
+        // System.out.println("---------------");
+      }
+      System.out.println("min: " + min);
   }
 
   @Override
