@@ -1,7 +1,6 @@
 package Ej1;
 
 //que falta=
-// El sort
 // que coño hay que pasar en el min()
 import java.util.Arrays;
 import java.util.Iterator;
@@ -27,13 +26,11 @@ public class QueueImplement<P extends Comparable<P>> implements Queue<P> {
 
   @Override
   public P peek() {
-    sort();
     return elements[0];
   }
 
   @Override
   public P pop() throws EmptyQueueException {
-    sort();
     P first = elements[0];
     this.elements = Arrays.copyOfRange(elements, 1, elements.length); // si hay error, es - 1
     cantidad--;
@@ -43,9 +40,8 @@ public class QueueImplement<P extends Comparable<P>> implements Queue<P> {
   @Override
   public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar
                                                       // el primero
-    // P min = null;
     // for (P shifts : elements) {
-    //   comparator.compare(elements[0], min);
+    // comparator.compare(elements[0], min);
     // }
     return elements[0];
   }
@@ -57,17 +53,7 @@ public class QueueImplement<P extends Comparable<P>> implements Queue<P> {
 
   @Override
   public void sort() {
-    P min = elements[0];
-    System.out.println("min: " + min);
-      for (int i = 0; i < cantidad; i++) {
-        if(elements[i].compareTo(min) == -1){
-          min = elements[i];
-        }
-        // System.out.println("REPSUESTA: "  + r);
-        // System.out.println("COSO: "  + o);
-        // System.out.println("---------------");
-      }
-      System.out.println("min: " + min);
+    Arrays.sort(elements, 0, cantidad);
   }
 
   @Override
