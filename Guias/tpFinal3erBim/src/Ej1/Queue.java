@@ -12,7 +12,8 @@ public interface Queue<P> extends Iterable<P>{
 
   P peek(); // revisar cual es el primero sin eliminarlo
 
-  P min(Comparator<MedicalShifts> comparator);
+  // P min(Comparator<MedicalShifts> comparator);
+  P min(Comparator<P> comparator);
 
   P max();
 

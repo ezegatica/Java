@@ -37,14 +37,30 @@ public class QueueImplement<P extends Comparable<P>> implements Queue<P> {
     return first;
   }
 
+  // @Override
+  // public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas
+  // pequeñajo. Se puede sortear y dsp agarrar
+  // // el primero
+  // // for (P shifts : elements) {
+  // // comparator.compare(elements[0], min);
+  // // }
+  // return elements[0];
+  // }
+
   @Override
-  public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas pequeñajo. Se puede sortear y dsp agarrar
-                                                      // el primero
-    // for (P shifts : elements) {
-    // comparator.compare(elements[0], min);
-    // }
-    return elements[0];
-  }
+  public P min(Comparator<P> comp) {
+    P[] tmp = elements.clone();
+    for (int i = 0; i < cantidad - 1; i++) {
+      for (int j = 0; j < cantidad - i - 1; j++) {
+        if (comp.compare(tmp[j], tmp[j + 1]) > 0) {
+          P temp = tmp[j];
+          tmp[j] = tmp[j + 1];
+          tmp[j + 1] = temp;
+        }
+      }
+    }
+    return tmp[0];
+  } 
 
   @Override
   public P max() { // devuelve el nombre mas grandajo. Se puede sortear y dsp agarrar el ultimo
