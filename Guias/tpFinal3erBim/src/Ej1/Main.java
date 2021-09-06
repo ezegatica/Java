@@ -39,6 +39,12 @@ public class Main {
                 return o1.getNombre().compareTo(o2.getNombre());
             }
         }));
+        // System.out.println(queueHospital.max(new Comparator<MedicalShifts>() {
+        //     @Override
+        //     public int compare(MedicalShifts o1, MedicalShifts o2) {
+        //         return o1.getNombre().compareTo(o2.getNombre());
+        //     }
+        // }));
     }
 }
 

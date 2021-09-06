@@ -1,7 +1,7 @@
 package Ej1;
 
 //INTERFAZ
-public interface Queue<P> extends Iterable<P>{
+public interface Queue<P> extends Iterable<P> {
   // Agregar elemento
   boolean add(P p) throws EmptyQueueException; // tira excepcion si la cola esta llena
 
@@ -15,7 +15,7 @@ public interface Queue<P> extends Iterable<P>{
   // P min(Comparator<MedicalShifts> comparator);
   P min(Comparator<P> comparator);
 
-  P max();
+  P max(Comparator<P> comparator);
 
   // Utils
   void sort();
