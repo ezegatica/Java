@@ -37,25 +37,15 @@ public class QueueImplement<P extends Comparable<P>> implements Queue<P> {
     return first;
   }
 
-  // @Override
-  // public P min(Comparator<MedicalShifts> comparator) {// devolver el nomre mas
-  // pequeñajo. Se puede sortear y dsp agarrar
-  // // el primero
-  // // for (P shifts : elements) {
-  // // comparator.compare(elements[0], min);
-  // // }
-  // return elements[0];
-  // }
-
   @Override
   public P min(Comparator<P> comp) {
-    P[] tmp = elements.clone();
-    for (int i = 0; i < cantidad - 1; i++) {
-      for (int j = 0; j < cantidad - i - 1; j++) {
-        if (comp.compare(tmp[j], tmp[j + 1]) > 0) {
-          P temp = tmp[j];
-          tmp[j] = tmp[j + 1];
-          tmp[j + 1] = temp;
+    P[] tmp = elements.clone(); //Creamos un clon temporal del Array elements
+    for (int i = 0; i < cantidad - 1; i++) { //Ciclo por todos los elementos del array
+      for (int j = 0; j < cantidad - i - 1; j++) { //Compara cada elemento con todos los otros elementos
+        if (comp.compare(tmp[j], tmp[j + 1]) > 0) { //Pregunta si el primer elemento es mayor al segundo (alfabeticamente) 
+          P temp = tmp[j]; //Crea una variable temporal del tipo P a la cual se le mete el turno en la posición j
+          tmp[j] = tmp[j + 1]; //Le resta una posicion al segundo elemento
+          tmp[j + 1] = temp; //Le suma una posicion al primer elemento
         }
       }
     }
