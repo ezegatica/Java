@@ -38,7 +38,7 @@ public class Main {
             public int compare(MedicalShifts o1, MedicalShifts o2) {
                 return o1.getNombre().compareTo(o2.getNombre());
             }
-        })); // ACA ADENTOR VA ALGO!°!!""#!!!#!#"!|" posiblemente comaprador de n ombre
+        }));
     }
 }
 
