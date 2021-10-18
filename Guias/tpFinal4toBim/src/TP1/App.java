@@ -41,7 +41,7 @@ public class App {
                 ;
             }
         }
-        TP tpDadaDraco3 = newTP(DADA, draco, 8, "third  TP");
+        TP tpDadaDraco3 = new TP(DADA, draco, 8, "third  TP");
         DADA.getTpManagment().deliver(tpDadaDraco2);
         DADA.getTpManagment().deliver(tpDadaHarry2);
         DADA.getTpManagment().deliver(tpDadaHermione2);

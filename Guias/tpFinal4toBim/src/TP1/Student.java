@@ -6,4 +6,7 @@ public class Student extends Person{
         super(dni, nombre);
         this.promedio = promedio;
     }
+    public void deliver(TP tp) {
+        // Entregar el tp
+    }
 }

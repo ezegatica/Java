@@ -15,13 +15,9 @@ public class Subject {
         // añadir estudiante
     }
 
-    public void getTpManagment() {
+    public Student[] getTpManagment() {
         // es para ordenar los tp en el orden de quien tiene mayor promedio, si dos
         // tienen el mismo promedio es por orden de llegada
-    }
-
-    public void deliver(TP tp) {
-        // Entregar el orto/tp
     }
 
     public void correct() {
