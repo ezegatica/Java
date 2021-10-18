@@ -8,7 +8,7 @@ public class App {
         Student draco = new Student(4447, "Draco", 7);
         Student luna = new Student(4448, "Luna", 10);
         Teacher severus = new Teacher(2345, "Severus");
-        Subject DADA = newSubject(severus, 0, "Defence  Against the  Dark  Arts");
+        Subject DADA = new Subject(severus, 0, "Defence  Against the  Dark  Arts");
         severus.addSubject(DADA);
         Subject PotionsMaster = new Subject(severus, 1, "Potions Master");
         severus.addSubject(PotionsMaster);
@@ -20,10 +20,10 @@ public class App {
         TP tpDadaHarry2 = new TP(DADA, harry, 1, "Second  TP");
         TP tpDadaHermione1 = new TP(DADA, hermione, 2, "First TP");
         TP tpDadaHermione2 = new TP(DADA, hermione, 3, "Second TP");
-        TP tpDadaRon1 = newTP(DADA, ron, 4, "First  TP");
-        TP tpDadaRon2 = newTP(DADA, ron, 5, "Second  TP");
+        TP tpDadaRon1 = new TP(DADA, ron, 4, "First  TP");
+        TP tpDadaRon2 = new TP(DADA, ron, 5, "Second  TP");
         TP tpDadaDraco1 = new TP(DADA, draco, 6, "First  TP");
-        TP tpDadaDraco2 = newTP(DADA, draco, 7, "Second  TP");
+        TP tpDadaDraco2 = new TP(DADA, draco, 7, "Second  TP");
         DADA.getTpManagment().deliver(tpDadaHarry1);
         DADA.getTpManagment().deliver(tpDadaHermione1);
         DADA.getTpManagment().deliver(tpDadaRon2);
