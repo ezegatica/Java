@@ -1,0 +1,4 @@
+Set:
+Objetos desordenados sin control ni orden
+no puede tener objetos duplicados en un conjunto
+
