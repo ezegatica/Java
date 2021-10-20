@@ -13,13 +13,13 @@ public class Main {
         byDniMap.put(uno.getDni(), uno);
         byDniMap.put(dos.getDni(), dos);
         System.out.println(byDniMap);
-        System.out.println();
+        System.out.println(" 1 ");
 
         //Recorro las claves
         for (Integer key : byDniMap.keySet()) {
             System.out.println(key);
         }
-        System.out.println();
+        System.out.println(" 2 ");
 
         //Recorro los valores
         for(Citizen citizen: byDniMap.values()){
@@ -29,7 +29,7 @@ public class Main {
         for(Map.Entry value: byDniMap.entrySet()){
             System.out.println(value);
         }
-        System.out.println();
+        System.out.println(" 3 ");
 
         // Colección para busqueda por nombre (Nombre -> Varias instancias)
         Map<String, List<Citizen>> byNameMap = new HashMap<>();
@@ -38,7 +38,7 @@ public class Main {
         byNameMap.get("Uno").add(
                 new Citizen(123, "Uno", "Tres"));
         System.out.println(byNameMap);
-        System.out.println("^^^^");
+        System.out.println(" 4 ");
 
         // Colección para busqueda por Nombre y despues por Apellido
         Map<String, Map<String, List<Citizen>>> byNameAndLastNameMap = new HashMap<>();
@@ -46,7 +46,7 @@ public class Main {
         byNameAndLastNameMap.get(uno.getFirstName()).put(uno.getLastName(), new ArrayList<>());
         byNameAndLastNameMap.get(uno.getFirstName()).get(uno.getLastName()).add(uno);
         System.out.println(byNameAndLastNameMap);
-        System.out.println();
+        System.out.println(" 5 ");
 
         // Busqueda por DNI ordenado por DNI ascendente
         Map<Integer, Citizen> sortedByDniMap = new TreeMap<>();
@@ -55,7 +55,7 @@ public class Main {
         for(Integer dni: sortedByDniMap.keySet()){
             System.out.println(dni);
         }
-        System.out.println();
+        System.out.println(" 6 ");
 
         // Busqueda por DNI ordenado por DNI descendente
         Map<Integer, Citizen> reversedSortedByDniMap = new TreeMap<>(
@@ -65,7 +65,7 @@ public class Main {
         for(Integer dni: reversedSortedByDniMap.keySet()){
             System.out.println(dni);
         }
-        System.out.println();
+        System.out.println(" 7 ");
 
     }
 }
