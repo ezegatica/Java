@@ -12,7 +12,7 @@ public class Subject {
     }
 
     public void addStudent(Student estudiante) {
-        // añadir estudiante
+        // añadir estudiante a la materia
     }
 
     public TP getTpManagment() {

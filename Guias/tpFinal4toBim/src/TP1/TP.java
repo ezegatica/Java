@@ -15,13 +15,15 @@ public class TP {
     public void deliver(TP tp){
         //entregar el tp (agregarlo al array?)
     }
-    public void correct(){
+    public String correct() throws EmptyTPsException{
+        // throw new EmptyTPsException();
+        return "TP from: " + "nombre" + " Name: " + "nombre del tp";
         //corregir el primero y sacarlo de la cola
     }
     public boolean isEmpty(){
-        return true;
+        return true; //preguntar si esta vacio el array ashei
     }
-    public TP[] studentTps(){
-        return null;
+    public String studentsTps(){
+        return "Array de los tps"; //devolver el array
     }
 }
