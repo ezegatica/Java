@@ -29,16 +29,19 @@ public class App {
         DADA.getTpManagment().deliver(tpDadaRon2);
         DADA.getTpManagment().deliver(tpDadaDraco1);
         try {
-            PotionsMaster.getTpManagment().correct();
+            PotionsMaster.getTpManagment().correct(); //You  have  already  corrected  all  the  tps 
         } catch (EmptyTPsException e) {
             System.out.println(e.getMessage());
         }
         while (!DADA.getTpManagment().isEmpty()) {
             try {
                 System.out.println(DADA.getTpManagment().correct());
+                //TP  from:  Hermione  Name:  First  TP 
+                //TP  from:  Ron  Name:  Second  TP 
+                //TP  from:  Draco  Name:  First  TP 
+                //TP  from:  Harry  Name:  First  TP 
             } catch (EmptyTPsException e) {
                 System.out.println(e.getMessage());
-                ;
             }
         }
         TP tpDadaDraco3 = new TP(DADA, draco, 8, "third  TP");
@@ -47,9 +50,9 @@ public class App {
         DADA.getTpManagment().deliver(tpDadaHermione2);
         DADA.getTpManagment().deliver(tpDadaRon1);
         DADA.getTpManagment().deliver(tpDadaDraco3);
-        System.out.println(DADA.getTpManagment().studentsTps());
+        System.out.println(DADA.getTpManagment().studentsTps()); //{Draco=[TP from: Draco Name: Second TP, TP from: Draco Name: third TP], Ron=[TP from: Ron Name: First  TP],  Hermione=[TP  from:  Hermione  Name:  Second  TP],  Harry=[TP  from:  Harry  Name:  Second  TP]} 
         PotionsMaster.addStudent(luna);
-        System.out.println(severus.studentsInOrder());
+        System.out.println(severus.studentsInOrder()); //[Draco,  Harry,  Hermione,  Luna,  Ron]
     }
 }
 //Output: 

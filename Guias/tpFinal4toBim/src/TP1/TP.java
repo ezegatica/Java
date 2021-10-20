@@ -18,4 +18,10 @@ public class TP {
     public void correct(){
         //corregir el primero y sacarlo de la cola
     }
+    public boolean isEmpty(){
+        return true;
+    }
+    public TP[] studentTps(){
+        return null;
+    }
 }

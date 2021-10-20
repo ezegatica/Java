@@ -4,7 +4,7 @@ public class Subject {
     private Teacher profe;
     private int id;
     private String nombre;
-
+    //array de estudiantes
     public Subject(Teacher profe, int id, String nombre) {
         this.profe = profe;
         this.id = id;
