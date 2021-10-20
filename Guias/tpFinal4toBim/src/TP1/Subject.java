@@ -15,7 +15,8 @@ public class Subject {
         // añadir estudiante
     }
 
-    public Student[] getTpManagment() {
+    public TP getTpManagment() {
+        return new TP(new Subject(new Teacher(2345, "Severus"), 0, "Defence  Against the  Dark  Arts"), new Student(4445, "Harry", 7), 0, "First  TP");
         // es para ordenar los tp en el orden de quien tiene mayor promedio, si dos
         // tienen el mismo promedio es por orden de llegada
     }

@@ -7,7 +7,4 @@ public class Teacher extends Person{
     public void addSubject(Subject materia){
         //añadir a un array
     }
-    public Student[] studentsInOrder(){
-        
-    }
 }

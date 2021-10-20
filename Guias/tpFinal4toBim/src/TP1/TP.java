@@ -12,4 +12,10 @@ public class TP {
         this.id = id;
         this.nombre = nombre;
     }
+    public void deliver(TP tp){
+        //entregar el tp (agregarlo al array?)
+    }
+    public void correct(){
+        //corregir el primero y sacarlo de la cola
+    }
 }
