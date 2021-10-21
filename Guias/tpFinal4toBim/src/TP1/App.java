@@ -37,10 +37,10 @@ public class App {
         while (!DADA.getTpManagment().isEmpty()) {
             try {
                 System.out.println(DADA.getTpManagment().correct());
+                //TP  from:  Harry  Name:  First  TP 
                 //TP  from:  Hermione  Name:  First  TP 
                 //TP  from:  Ron  Name:  Second  TP 
                 //TP  from:  Draco  Name:  First  TP 
-                //TP  from:  Harry  Name:  First  TP 
             } catch (EmptyTPsException e) {
                 System.out.println(e.getMessage());
             }

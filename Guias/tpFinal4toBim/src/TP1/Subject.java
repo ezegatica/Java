@@ -6,27 +6,35 @@ public class Subject {
     private Teacher profe;
     private int id;
     private String nombre;
-    private Map<Integer, Student> estudiantes;
+    // private Map<Integer, Student> estudiantes;
+    private Map<String, List<Student>> estudiantes;
+
 
     // array de estudiantes
     public Subject(Teacher profe, int id, String nombre) {
         this.profe = profe;
         this.id = id;
         this.nombre = nombre;
-        this.estudiantes = new TreeMap<>(Comparator.reverseOrder());
+        // this.estudiantes = new TreeMap<>(Comparator.reverseOrder());
+        this.estudiantes = new HashMap<>();
+        estudiantes.put("Lista", new ArrayList<>());
+
     }
 
     public void addStudent(Student estudiante) {
         // Busqueda por promedio ordenado por promedio descendente
-        // O usar como en el ej 6 el 6-7 o el 3-4 
-
-        // estudiantes.put(Integer.parseInt(estudiante.getPromedio()+""+estudiante.getDni()), estudiante); //Te quiero nati, no nos sanciones, esto funciona
+        // O usar como en el ej 6 el 6-7 o el 3-4
+        // estudiantes.put(Integer.parseInt(estudiante.
+        // getPromedio()+""+estudiante.getDni()),estudiante); //Esto funciona? How
+        estudiantes.get("Lista").add(estudiante);
+        // System.out.println(estudiantes);
     }
 
     public void getEstudiantes() {
-        for (Student dni : estudiantes.values()) {
-            System.out.println(dni);
-        }
+        System.out.println(estudiantes);
+        // for (Student dni : estudiantes.values()) {
+        //     System.out.println(dni);
+        // }
     }
 
     public TP getTpManagment() {
