@@ -21,14 +21,14 @@ public class Main {
         }
         System.out.println(" 2 ");
 
-        //Recorro los valores
-        for(Citizen citizen: byDniMap.values()){
-            System.out.println(citizen);
-        }
-        System.out.println();
-        for(Map.Entry value: byDniMap.entrySet()){
-            System.out.println(value);
-        }
+        // //Recorro los valores
+        // for(Citizen citizen: byDniMap.values()){
+        //     System.out.println(citizen);
+        // }
+        // System.out.println();
+        // for(Map.Entry value: byDniMap.entrySet()){
+        //     System.out.println(value);
+        // }
         System.out.println(" 3 ");
 
         // Colección para busqueda por nombre (Nombre -> Varias instancias)

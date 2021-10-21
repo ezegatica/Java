@@ -9,4 +9,11 @@ public class Student extends Person{
     public void deliver(TP tp) {
         // Entregar el tp
     }
+    public int getPromedio(){
+        return promedio;
+    }
+    @Override
+    public String toString() {
+        return "{" + "nombre=" + super.getNombre() + ", promedio=" + promedio +"}";
+    }
 }

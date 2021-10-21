@@ -16,6 +16,7 @@ public class App {
         DADA.addStudent(harry);
         DADA.addStudent(ron);
         DADA.addStudent(draco);
+        DADA.getEstudiantes();
         TP tpDadaHarry1 = new TP(DADA, harry, 0, "First  TP");
         TP tpDadaHarry2 = new TP(DADA, harry, 1, "Second  TP");
         TP tpDadaHermione1 = new TP(DADA, hermione, 2, "First TP");

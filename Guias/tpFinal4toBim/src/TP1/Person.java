@@ -7,4 +7,10 @@ public abstract class Person {
         this.dni = dni;
         this.nombre = nombre;
     }
+    public String getNombre() {
+        return nombre;
+    }
+    public int getDni() {
+        return dni;
+    }
 }

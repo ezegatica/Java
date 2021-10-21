@@ -2,3 +2,4 @@ Set:
 Objetos desordenados sin control ni orden
 no puede tener objetos duplicados en un conjunto
 
+usar         // Busqueda por DNI ordenado por DNI descendente del ej6?
