@@ -2,31 +2,31 @@ package aver;
 
 import java.util.*;
 
-public class Subject { // Clase de la materia
-  private Set<Student> estudiantes;
-  private Teacher profe;
-  private int id;
-  private String nombre;
-  private TPManagement tpManagement;
+public class Subject{
+    private Teacher profesor;
+    private int id;
+    private String nombre;
+    private Set<Student> estudiantes;
+    private TPManagement tpManagement;
 
-  public Subject(Teacher profe, int id, String nombre) {
-    this.profe = profe;
-    this.id = id;
-    this.nombre = nombre;
-    this.estudiantes = new HashSet<>();
-    this.tpManagement = new TPManagement();
-  }
+    public Subject(Teacher profesor, int id, String nombre){
+        this.profesor = profesor;
+        this.id = id;
+        this.nombre = nombre;
+        this.estudiantes = new HashSet<>();
+        this.tpManagement = new TPManagement(estudiantes);
+    }
 
-  public void addStudent(Student estudiante) {
-    this.estudiantes.add(estudiante);
-  }
+    public void addStudent(Student estudiante){
+        estudiantes.add(estudiante);
+    }
 
-  public TPManagement getTpManagment() {
-    return this.tpManagement;
-  }
+    public TPManagement getTpManagment(){
+        return tpManagement;
+    }
 
-  @Override
-  public String toString() {
-    return "{" + profe + ", " + id + ", " + nombre + "}";
-  }
+    @Override
+    public String toString(){
+        return "{"+profesor+", "+id+", "+nombre+"}";
+    }
 }

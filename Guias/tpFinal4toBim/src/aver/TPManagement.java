@@ -4,8 +4,10 @@ import java.util.*;
 
 public class TPManagement {
     private NavigableSet<TP> trabajos;
+    private Set<Student> estudiantes;
 
-    public TPManagement() {
+    public TPManagement(Set<Student> estudiantes) {
+        this.estudiantes = estudiantes;
         trabajos = new TreeSet<TP>(new Comparator<TP>() {
             @Override
             public int compare(TP primerTP, TP segundoTP) {
@@ -31,9 +33,10 @@ public class TPManagement {
         return trabajos.isEmpty();
     }
 
-    public String studentsTps(){
-        StringBuilder elestring = new StringBuilder();
+    public String studentsTps() {
+        StringBuilder elestring = new StringBuilder("");
         trabajos.forEach(trabajo -> elestring.append(trabajo + "\n"));
         return elestring.toString();
     }
+
 }
