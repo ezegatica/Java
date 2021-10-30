@@ -1,4 +1,4 @@
-package aver;
+package TP;
 
 public class TP implements Comparable<TP>{ //Clase del TP. Necesitamos el comparable para utilizar el compareTo y usarlo en el Sort de TPManagement
   private Student alumno;

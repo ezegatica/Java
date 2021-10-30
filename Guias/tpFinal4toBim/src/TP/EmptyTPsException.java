@@ -1,4 +1,4 @@
-package aver;
+package TP;
 
 public class EmptyTPsException extends RuntimeException {
     private static final String message = "You have already corrected all the tps.";

@@ -1,4 +1,4 @@
-package aver;
+package TP;
 
 public abstract class Person { //Clase padre de persona, para no reescribir los parametros de DNI y de Nombre
     private int dni;

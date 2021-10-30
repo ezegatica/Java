@@ -1,4 +1,4 @@
-package aver;
+package TP;
 
 public class Student extends Person { //Clase del estudiante, hereda la clase Persona
   private int promedio;
