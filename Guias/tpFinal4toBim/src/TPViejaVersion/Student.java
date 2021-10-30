@@ -1,4 +1,4 @@
-package TP1;
+package TPViejaVersion;
 
 public class Student extends Person{
     private int promedio;

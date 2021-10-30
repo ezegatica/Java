@@ -1,4 +1,4 @@
-package TP1;
+package TPViejaVersion;
 
 public class TP {
     private Subject materia;

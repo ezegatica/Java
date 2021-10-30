@@ -1,4 +1,4 @@
-package TP1;
+package TPViejaVersion;
 
 public class Teacher extends Person {
     // array de materias que da

@@ -1,4 +1,4 @@
-package TP1;
+package TPViejaVersion;
 
 public abstract class Person {
     private int dni;
