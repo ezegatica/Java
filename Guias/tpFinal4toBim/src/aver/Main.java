@@ -50,7 +50,7 @@ public class Main {
         System.out.println(e.getMessage());
       }
     }
-    System.out.println("<<<<<<  <<<<");
+    System.out.println("<<<<<<<<<<");
     TP tpDadaDraco3 = new TP(DADA, draco, 8, "third  TP");
     DADA.getTpManagment().deliver(tpDadaDraco2);
     DADA.getTpManagment().deliver(tpDadaHarry2);
@@ -62,6 +62,7 @@ public class Main {
                                                              // TP], Hermione=[TP from: Hermione Name: Second TP],
                                                              // Harry=[TP from: Harry Name: Second TP]}
     PotionsMaster.addStudent(luna);
+    System.out.println("<<<<<<<<<<");
     System.out.println(severus.studentsInOrder()); // [Draco, Harry, Hermione, Luna, Ron]
   }
 }

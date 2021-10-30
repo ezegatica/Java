@@ -1,8 +1,6 @@
 package aver;
 
-import java.util.*;
-
-public class Student extends Person {
+public class Student extends Person { //Clase del estudiante, hereda la clase Persona
   private int promedio;
 
   public Student(int dni, String nombre, int promedio) {
