@@ -43,12 +43,16 @@ public class TPManagement { // Clase de TPManagement, que es el Buzon de entrega
     public String studentsTps() {
         //Creamos un map con la key de String y una Lista de tps como valores
         SortedMap<String, List<TP>> tpMap = new TreeMap<>(); 
+        //El mapa esta ordenado naturalemtne por la key, que en este caso va a ser
+        //el nombre del estudiante.
 
         for (TP trabajo : trabajos) {
-            String name = trabajo.getAlumno().getNombre();
+            String name = trabajo.getAlumno().getNombre(); //agarro el nombre del estudiante de el trabajo
             tpMap.computeIfAbsent(name, k -> new ArrayList<>()).add(trabajo);
+            //Si el nombre del estudiante no está en el mapa, lo agrega con una lista vacia.
+            //Si el nombre del estudiante ya está en el mapa, lo agrega a la lista de ese nombre.
         }
-        return tpMap.toString();
+        return tpMap.toString(); //Devuelve la lista ordenada en un String
     }
 
 }

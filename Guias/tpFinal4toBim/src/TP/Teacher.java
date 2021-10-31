@@ -15,7 +15,7 @@ public class Teacher extends Person { // Clase del profesor, hereda la clase Per
     }
 
     public String studentsInOrder() {
-        // mostrar a todos los estudiantes que tiene un profesor en orden alfabético
+        // Mostrar a todos los estudiantes que tiene un profesor en orden alfabético
         // por el nombre del estudiante
         Set<String> nombres = new TreeSet<String>(); //Creamos un treeset de nombres de estudiantes
 

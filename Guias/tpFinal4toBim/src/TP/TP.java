@@ -1,6 +1,6 @@
 package TP;
 
-public class TP implements Comparable<TP> { // Clase del TP. Necesitamos el comparable para utilizar el compareTo y
+public class TP { // Clase del TP. Necesitamos el comparable para utilizar el compareTo y
                                             // usarlo en el Sort de TPManagement
   private Student alumno;
   private Subject materia;
@@ -22,10 +22,11 @@ public class TP implements Comparable<TP> { // Clase del TP. Necesitamos el comp
     return alumno.getPromedio(); // Usamos el metodo del alumno para devolver el promedio
   }
 
-  @Override
-  public int compareTo(TP segundoTP) {
-    return Integer.compare(alumno.getPromedio(), segundoTP.getAlumno().getPromedio());
-  }
+  // @Override
+  // public int compareTo(TP segundoTP) {
+  //   System.out.println("holis<<<<<<<<<<");
+  //   // return Integer.compare(alumno.getPromedio(), segundoTP.getAlumno().getPromedio());
+  // }
 
   @Override
   public String toString() {
