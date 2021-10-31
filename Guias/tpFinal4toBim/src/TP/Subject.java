@@ -15,6 +15,7 @@ public class Subject { // Clase de la materia
         this.nombre = nombre;
         this.estudiantes = new HashSet<>();
         this.tpManagement = new TPManagement();
+        // Clase de TPManagement, que es el Buzon de entrega de trabajos de una materia
     }
 
     public void addStudent(Student estudiante) {

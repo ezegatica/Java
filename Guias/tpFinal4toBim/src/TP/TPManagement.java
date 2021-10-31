@@ -41,8 +41,8 @@ public class TPManagement { // Clase de TPManagement, que es el Buzon de entrega
     }
 
     public String studentsTps() {
-        // implementar algun comparator si queremos ordenar por size() de la List<TP>
-        SortedMap<String, List<TP>> tpMap = new TreeMap<>();
+        //Creamos un map con la key de String y una Lista de tps como valores
+        SortedMap<String, List<TP>> tpMap = new TreeMap<>(); 
 
         for (TP trabajo : trabajos) {
             String name = trabajo.getAlumno().getNombre();
