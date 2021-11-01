@@ -24,5 +24,6 @@ public class Teacher extends Person { // Clase del profesor, hereda la clase Per
             estudiantes.forEach(estudiante -> nombres.add(estudiante.getNombre())); //Añadimos al array de nombres los estudiantes de cada materia
         }
         return nombres.toString(); //Como el array de nombres es un treeset de orden natural, se devolveran en orden alfabetico
+        // [Draco, Harry, Hermione, Luna, Ron]
     }
 }

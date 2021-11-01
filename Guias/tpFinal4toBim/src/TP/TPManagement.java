@@ -53,6 +53,9 @@ public class TPManagement { // Clase de TPManagement, que es el Buzon de entrega
             //Si el nombre del estudiante ya está en el mapa, lo agrega a la lista de ese nombre.
         }
         return tpMap.toString(); //Devuelve la lista ordenada en un String
+        // {Draco=[TP from: Draco Name: Second TP, TP from: Draco Name: third TP],
+        // Ron=[TP from: Ron Name: First TP], Hermione=[TP from: Hermione Name: Second
+        // TP], Harry=[TP from: Harry Name: Second TP]}
     }
 
 }
